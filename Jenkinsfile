@@ -1,14 +1,14 @@
 pipeline {
   environment {
     imagename = "yenigul/hacicenkins"
-    registryCredential = 'my api token'
+    registryCredential = 'Docker'
     dockerImage = ''
   }
   agent any
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/sarathkumar998/dockerfile-test.git', branch: 'master', credentialsId: 'docker'])
+        git([url: 'https://github.com/sarathkumar998/dockerfile-test.git', branch: 'master', credentialsId: 'Docker'])
 
       }
     }
