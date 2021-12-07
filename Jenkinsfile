@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/sarathkumar998/dockerfile-test.git', branch: 'master', credentialsId: 'Docker'])
+        git([url: 'https://github.com/sarathkumar998/dockerfile-test.git', branch: 'master', credentialsId: 'Docker_token'])
 
       }
     }
